@@ -60,4 +60,4 @@ option = st.selectbox(
 )
 
 st.write('You selected:', option)
-st.dataframe(recommend_products(df, 1039))
+st.dataframe(recommend_products(df, int(option)))
