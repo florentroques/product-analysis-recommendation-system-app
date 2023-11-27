@@ -56,7 +56,7 @@ df = pd.read_csv('recommendation_db.csv')
 
 option = st.selectbox(
     f'Choose a user ID between {df["user_id_encoded"].min()} and {df["user_id_encoded"].max()}',
-    (df['user_id_encoded'].unique())
+    (sorted(df['user_id_encoded'].unique()))
 )
 
 st.write('You selected:', option)
